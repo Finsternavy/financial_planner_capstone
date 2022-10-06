@@ -52,14 +52,14 @@ def save_user():
     except Exception as e:
         return Response(f"Unexpected error: {e}", status=500)
 
-@app.post("/user/<user_name>")
+@app.post("/user")
 
-def get_user(user_name):
+def get_user():
     print("this works")
     try:
         data = request.get_json()
         print(data)
-        user = database.users.find_one({"user_name": user_name})
+        user = database.users.find_one({"user_name": data['user_name']})
         returnData = []
     
         if not user:

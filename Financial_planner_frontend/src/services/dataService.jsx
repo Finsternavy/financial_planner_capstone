@@ -1,5 +1,5 @@
 import axios from "axios"
-let rootURL = "https://app.netlify.com/sites/shimmering-cat-5e70c4/deploys/633e514d87f9d94bd5f2ac4b"
+let rootURL = "https://app.netlify.com/sites/shimmering-cat-5e70c4/deploys/633e514d87f9d94bd5f2ac4b/"
 
 class DataService{
 

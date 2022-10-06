@@ -134,7 +134,6 @@
     background-color: var(--secondary-color);
     text-align: center;
     border: none;
-    border-radius: 0;
 }
 
 .input::placeholder{

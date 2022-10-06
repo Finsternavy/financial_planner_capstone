@@ -1,4 +1,5 @@
 import axios from "axios"
+let rootURL = "https://app.netlify.com/sites/shimmering-cat-5e70c4/deploys/633e514d87f9d94bd5f2ac4b"
 
 class DataService{
 
@@ -14,7 +15,7 @@ class DataService{
         console.log("Attempting to get user")
         let newdata = {}
 
-        let response = await axios.post("http://127.0.0.1:5000/user/" + cradentials['user_name'], cradentials).then(res =>{
+        let response = await axios.post(rootURL + cradentials['user_name'], cradentials).then(res =>{
             console.log(res.data)
             newdata = res.data
         })

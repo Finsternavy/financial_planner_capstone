@@ -53,7 +53,7 @@ def save_user():
         return Response(f"Unexpected error: {e}", status=500)
 
 @app.post("/user")
-
+@cross_origin()
 def get_user():
     print("this works")
     try:
